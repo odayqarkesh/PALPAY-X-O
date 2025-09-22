@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> PALPAY - X/O Game </title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="side-content left-side">
+        <img src="images/We are PALPAY Logo.jpg" alt="We are PALPAY Logo" class="side-logo">
+        <img src="images/we are palpay-qr.png" alt="We are PALPAY QR Code" class="side-qr">
+    </div>
+
+    <div class="container">
+        <h1> PALPAY - لعبة X/O </h1>
+
+        <div class="game-section">
+            <div class="xo-board" id="xoBoard">
+                <div class="cell" data-cell-index="0"></div>
+                <div class="cell" data-cell-index="1"></div>
+                <div class="cell" data-cell-index="2"></div>
+                <div class="cell" data-cell-index="3"></div>
+                <div class="cell" data-cell-index="4"></div>
+                <div class="cell" data-cell-index="5"></div>
+                <div class="cell" data-cell-index="6"></div>
+                <div class="cell" data-cell-index="7"></div>
+                <div class="cell" data-cell-index="8"></div>
+            </div>
+
+            <div id="statusDisplay" class="status"></div>
+
+            <button class="action-btn" id="resetBtn">🔄 لعبة جديدة</button>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div>لاعب X</div>
+                <span class="stat-number score-x" id="scoreX">0</span>
+            </div>
+            <div class="stat-item">
+                <div>تعادل</div>
+                <span class="stat-number score-draw" id="scoreDraw">0</span>
+            </div>
+            <div class="stat-item">
+                <div>لاعب O</div>
+                <span class="stat-number score-o" id="scoreO">0</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="side-content right-side">
+        <img src="images/PALPAY Logo.jpg" alt="PALPAY Logo" class="side-logo">
+        <img src="images/PALPAY-QR.png" alt="PALPAY QR Code" class="side-qr">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
